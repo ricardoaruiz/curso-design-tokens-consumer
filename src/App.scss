@@ -6,14 +6,33 @@
   margin: 0 auto;
   padding: 0 2rem;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   h1 {
     font-family: var(--font-family-poppins);
+    color: var(--color-neutral-elements-03);
     text-align: center;
   }
 
   h3 {
     font-family: $font-family-archivo;
+    color: $color-neutral-elements-03;
     text-align: center;
+  }
+
+  .theme-button {
+    margin-top: 5rem;
+    width: 100%;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--color-feedback-warning-pure);
+    padding: 1rem;
+    font-family: var(--font-family-poppins);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-elements-03);
+    cursor: pointer;
   }
 
 }
@@ -27,7 +46,7 @@
   font-family: var(--font-family-poppins);
   border-radius: var(--border-radius-sm);
   color: var(--color-neutral-surface-pure);
-  background-color: var(--color-brand-pure);
+  background-color: var(--color-feedback-warning-pure);
 }
 
 .box2 {

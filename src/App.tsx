@@ -1,9 +1,13 @@
+import { useTheme } from './context/Theme'
+
 import * as global from 'design-tokens/dist/marca-a/js/global'
 import * as dark from 'design-tokens/dist/marca-a/js/dark'
 
 import './App.scss'
 
 function App() {
+
+  const { toggleMode, currentMode } = useTheme()
 
   return (
     <div className="container">
@@ -31,6 +35,15 @@ function App() {
       }}>
         I am a element styled with design-tokens (js-variables)
       </div>
+
+      <button 
+        type="button" 
+        className="theme-button" 
+        onClick={toggleMode}
+      >
+        Toggle Mode - {currentMode}
+      </button>
+
     </div>
   )
 }
