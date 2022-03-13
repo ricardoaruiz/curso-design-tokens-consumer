@@ -1,11 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.scss'
+
+import { GlobalStyle } from './styles/GlobalStyle'
+import { AppThemeProdiver } from './context/Theme'
 import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppThemeProdiver>
+      <GlobalStyle />
+      <App />
+    </AppThemeProdiver>
   </React.StrictMode>,
   document.getElementById('root')
 )
