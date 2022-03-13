@@ -1,3 +1,6 @@
+import * as global from 'design-tokens/dist/marca-a/js/global'
+import * as dark from 'design-tokens/dist/marca-a/js/dark'
+
 import './App.scss'
 
 function App() {
@@ -13,6 +16,20 @@ function App() {
 
       <div className="box2">
         I am a element styled with design-tokens (scss-variables)
+      </div>
+
+      <div style={{
+        maxWidth: '300px',
+        margin: '50px auto 0 auto',
+        padding: '1rem',
+        boxShadow: '2px 4px 6px rgba(0,0,0,0.3)',
+
+        fontFamily: dark.FontFamilyPoppins,
+        color: dark.ColorBrand03,
+        borderRadius: global.BorderRadiusSm,
+        backgroundColor: dark.ColorBrand01
+      }}>
+        I am a element styled with design-tokens (js-variables)
       </div>
     </div>
   )
